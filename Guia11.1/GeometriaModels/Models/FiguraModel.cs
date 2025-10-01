@@ -7,9 +7,9 @@ public abstract class FiguraModel
     public double? Area { get; set; }
 
     public FiguraModel() { }
-    public FiguraModel(int id, double area)
+    public FiguraModel(int? id, double? area)
     {
-        Id = id;
-        Area = area;
+        this.Id = id;
+        this.Area = area;
     }
 }

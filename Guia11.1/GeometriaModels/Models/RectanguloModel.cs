@@ -6,10 +6,10 @@ public class RectanguloModel:FiguraModel
     public double? Largo { get; set; }
 
     public RectanguloModel() { }
-    public RectanguloModel(double ancho, double largo,int id, double area) : base(id, area)
+    public RectanguloModel(double? ancho, double? largo,int? id, double? area) : base(id, area)
     {
-        Ancho = ancho;
-        Largo = largo;
+        this.Ancho = ancho;
+        this.Largo = largo;
     }
 }
 

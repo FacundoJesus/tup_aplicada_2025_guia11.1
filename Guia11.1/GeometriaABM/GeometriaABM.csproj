@@ -9,11 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DALs\" />
+    <ProjectReference Include="..\GeometriaListDALsImpl\GeometriaListDALsImpl.csproj" />
+    <ProjectReference Include="..\GeometriaModels\GeometriaModels.csproj" />
+    <ProjectReference Include="..\GeometriaMSQLDALsImpl\GeometriaMSQLDALsImpl.csproj" />
+    <ProjectReference Include="..\GeometriaServices\GeometriaServices.csproj" />
   </ItemGroup>
 
 </Project>
